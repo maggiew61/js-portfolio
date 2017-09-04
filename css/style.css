@@ -1,0 +1,271 @@
+/*generic=========================*/
+/*navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	height:85px
+}
+li {
+    float: left;
+}
+#amor{
+	letter-spacing: 2px;
+	font-size: 48px;
+	border-right: 2px dotted white;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li:nth-child(2) {
+    margin-left: 20px;
+}
+li a:hover {
+    background-color: none;
+}
+#formid select{
+	margin-left: 440px;
+    margin-top: 30px;
+}
+#forher span {
+	font-size:24px
+}
+#forher{
+	padding:2px;
+	border-right: 2px dotted white;
+    margin-right: 28px;
+    padding-right: 20px;
+}
+.fa-gift:before{
+	font-size:45px
+}
+.fa-suitcase:before{
+	font-size:41px
+}
+body{
+	font-family:Apercu,Gill Sans MT,Gill Sans,Arial,sans-serif   /*starts from left*/
+}
+header{
+	font-size:18px;
+	margin-bottom:15px
+}
+/*footer*/
+#footer{
+	background-color:#ecedda;
+	padding-bottom: 25px
+}
+#footer .container>section:nth-child(1){
+	padding-left:194px;
+	padding-right:194px;
+	margin-top:40px;
+	text-align:center;
+}
+#footer .container>section:nth-child(1) header{
+border-bottom: 1px dotted grey;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+#footer .container>div{
+	padding-left:194px;
+	padding-right:194px;
+	margin-top:40px
+}
+#footer .container>div section{
+	float:left;
+	text-align:center
+}
+.form-inline{
+	padding-left:29%;
+	padding-right:29%
+}
+/*index page=================================*/
+/*slider*/
+#slider div:nth-child(1) div:nth-child(2){
+    top: 221px;
+    position: absolute;
+    left: 34%;
+    font-size: 30px;
+    color: purple;
+}
+#slider div:nth-child(1) div:nth-child(3){
+    letter-spacing: 19px;
+    COLOR: PURPLE;
+    top: 261px;
+    position: absolute;
+    left: 34%;
+    font-size: 106px;
+    FONT-WEIGHT: BOLD;
+    OUTLINE-WIDTH: 98PX;
+}
+#slider div:nth-child(2) div:nth-child(2){
+	right: 28%;
+    top: 85px;
+    position: absolute;
+    font-size: 35px;
+    color: darkblue;
+}
+#slider div:nth-child(2) div:nth-child(3){
+    right: 9%;
+    letter-spacing: 10px;
+    COLOR: darkblue;
+    top: 150px;
+    position: absolute;
+    font-size: 86px;
+    FONT-WEIGHT: BOLD;
+    OUTLINE-WIDTH: 98PX;
+}
+#slider div:nth-child(3) div:nth-child(2){
+    right: 70%;
+    top: 85px;
+    position: absolute;
+    font-size: 86px;
+    color: #ecedda;
+    letter-spacing: 14px;
+}
+#slider div:nth-child(3) div:nth-child(3){
+    right: 44%;
+    COLOR: #ecedda;
+    top: 204px;
+    position: absolute;
+    font-size: 28px;
+    FONT-WEIGHT: BOLD;
+    OUTLINE-WIDTH: 98PX;
+}
+#discount a{
+	text-align:center;
+	margin-top: 10px;
+	font-size: 25px;
+	margin-left:15%;
+	margin-right:15%
+}
+.fa-times{
+	font-size: 18px;
+    padding-left: 17px;
+}
+
+/*for her page=============================*/
+/*banner*/
+#forherbanner img{
+	width:100%;
+	margin-bottom:13px
+}
+
+/*left menu*/
+#leftmenu{
+	height:200px;
+	float:left
+}
+#leftmenu label i{
+	font-size:23px;
+	padding-right:2px;
+	color:purple
+}
+#leftmenu hr{
+	margin-right:61px;
+	margin-top:0px
+}
+/*main*/
+#forhermain{
+	height:545px;
+	float:left
+}
+#forhermain header{
+	color: purple;
+	font-weight: bold;
+	font-size: 28px
+}
+#forhermain hr{
+	border-top:6px solid rgba(0,0,0,.1);
+	margin-top:0px
+}
+#forhermain button{
+	border-color:darkgrey;
+	color:darkgrey
+}
+#forhermain ul{
+	background-color:white;
+	height:45px
+}
+#forhermain ul li div{
+	padding-left:528px;
+	font-size:16px
+}
+#forhermain ul li:nth-child(2){
+	margin-left:0px
+}
+#sortTable1 td  div{
+padding-right: 11px;
+padding-left: 2px;
+/*border: 1px solid black;*/
+margin-right: 15px;
+padding-left: 12px;
+}
+#sortTable1 td  div img{
+width:90%
+}
+#sortTable1 td  div p:nth-child(2){
+	font-size:18px;
+	border-bottom: 1px solid #e2e2e2;
+	margin-bottom:0px;
+	font-weight:bold
+}
+#sortTable1 td  div p:nth-child(3){
+	font-size:15px;
+	margin-bottom:0px;
+}
+#sortTable1 td  div p:nth-child(4){
+	font-size:15px;
+	font-weight:bold;
+	text-align:right
+}
+#ndbutton{
+	margin-left:20px
+}
+td:hover{
+	border:1px solid grey
+}
+
+/*rwd*/
+* {
+    box-sizing: border-box;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

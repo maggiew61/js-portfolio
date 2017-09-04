@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+	<title>AMOR | leading fashion brand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- font awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+<!-- bootstrap? -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- w3 css -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- tab icon -->
+	 <link rel="icon" href="img/gift.png" />
+
+</head>
+
+<body  style="font-family:Microsoft JhengHei;">
+<!-- navigation bar -->
+<ul style="margin-bottom:0px">
+	<div class="container">
+	  	<li><a class="active" href="index-cn.html" id="amor">A M O R</a></li>
+	  	<li><a href="forher-cn.html" id="forher"><span>她的</span><br/><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+		<li>
+			<form  id="formid">
+				<select class="custom-select" name="select" onchange="changeLang()">
+					<option value="forher.html">English</option>
+					<option value="forher-cn.html">中文</option>
+				</select>
+			</form>
+		</li>
+	</div>
+</ul>
+
+
+<div class="container">
+
+<!-- banner -->
+<div id="forherbanner">
+	<img  src="img/banner.jpg" />
+</div>
+
+
+<!-- left menu -->
+<div id="leftmenu" class="col-2" >
+	<p>分類</p>
+	<label class="custom-control custom-checkbox" >
+		  <input type="checkbox" class="custom-control-input" value="Dress" onclick="sortDress()">
+		  <i class="fa fa-gratipay" aria-hidden="true"></i>
+		  <span class="custom-control-indicator"></span>
+		  <span  class="custom-control-description">洋裝</span>
+	</label>
+	<hr />
+	<label class="custom-control custom-checkbox">
+		  <input type="checkbox" class="custom-control-input" value="Accessory" onclick="sortDress()">
+		  <i class="fa fa-gratipay" aria-hidden="true" ></i>
+		  <span class="custom-control-indicator"></span>
+		  <span class="custom-control-description" >配件</span>
+	</label>
+	<hr />
+</div>
+
+<!-- main -->
+<div id="forhermain" class="col-10">
+	<header >
+		所有產品
+	</header>
+	<hr />
+	<ul>
+		<li>
+			<button type="button" class="btn btn-outline-secondary" onclick="sortFunctL()" >$ <i class="fa fa-arrow-right" aria-hidden="true"></i> $$$</button>
+		</li>
+		<li>
+			<button id="ndbutton" type="button" class="btn btn-outline-secondary" onclick="sortFunctH()">$$$ <i class="fa fa-arrow-right" aria-hidden="true"></i> $</button>
+		</li>
+		<li>
+			<div id="numbers" ></div>
+		</li>
+	</ul>
+	<table id="sortTable">
+		<tr id="sortTable1">
+		</tr>
+	</table>
+</div>
+
+<!-- for container -->
+</div>
+
+<div id="footer" >
+	<div class="container">
+		<section>
+				<header>
+					不想錯過最新消息?
+				</header>
+				<p>
+					一手掌握我們最新的折扣、流行資訊!
+				</p>
+				<form class="form-inline" action="https://formspree.io/maggiew61@yahoo.com" method="POST">
+					  <div class="form-group mx-sm-3">
+						  <label for="inputPassword2" class="sr-only">email</label>
+						  <input type="text" class="form-control" id="inputPassword2" placeholder="Email">
+					  </div>
+					  <button type="submit" class="btn">送出</button>
+				</form>
+		</section>
+		<div>
+			<section class="col-4" >
+				<header>公司資訊</header>
+				<p>
+					關於我們
+				</p>
+				<p>
+					加入我們
+				</p>
+				<p>
+					尋找店面
+				</p>
+			</section>
+			<section class="col-4" >
+				<header>協助</header>
+				<p>
+					聯絡我們
+				</p>
+				<p>
+					追蹤訂單
+				</p>
+				<p>
+					出貨資訊
+				</p>
+			</section>
+			<section class="col-4" >
+				<header>快速連結</header>
+				<p>
+					隱私權政策
+				</p>
+				<p>
+					服務條款
+				</p>
+			</section>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="js/myScript-cn.js"></script>
+<script src="js/lang-forher.js"></script>
+
+
+</body>
+</html>

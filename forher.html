@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AMOR | leading fashion brand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- font awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+<!-- bootstrap? -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- tab icon -->
+	 <link rel="icon" href="img/gift.png" />
+
+<!-- w3 css -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body style="font-family:Georgia, serif" >
+<!-- navigation bar -->
+<ul style="margin-bottom:0px">
+	<div class="container">
+	  	<li><a class="active" href="index.html" id="amor">A M O R</a></li>
+	  	<li><a href="index2.html" id="forher"><span>for HER</span><br/><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+		<li>
+			<form  id="formid">
+				<select class="custom-select" name="select" onchange="changeLang()">
+					<option value="index2.html">English</option>
+					<option value="forher-cn.html">中文</option>
+				</select>
+			</form>
+		</li>
+	</div>
+</ul>
+
+
+<div class="container">
+
+<!-- banner -->
+<div id="forherbanner">
+	<img  src="img/banner.jpg" />
+</div>
+
+
+<!-- left menu -->
+<div id="leftmenu" class="col-2" >
+	<p>CATEGORY</p>
+	<label class="custom-control custom-checkbox" >
+		  <input type="checkbox" class="custom-control-input" value="Dress" onclick="sortDress()">
+		  <i class="fa fa-gratipay" aria-hidden="true"></i>
+		  <span class="custom-control-indicator"></span>
+		  <span  class="custom-control-description">DRESS</span>
+	</label>
+	<hr />
+	<label class="custom-control custom-checkbox">
+		  <input type="checkbox" class="custom-control-input" value="Accessory" onclick="sortDress()">
+		  <i class="fa fa-gratipay" aria-hidden="true" ></i>
+		  <span class="custom-control-indicator"></span>
+		  <span class="custom-control-description" >ACCESSORY</span>
+	</label>
+	<hr />
+</div>
+
+<!-- main -->
+<div id="forhermain" class="col-10">
+	<header >
+		ALL PRODUCTS
+	</header>
+	<hr />
+	<ul>
+		<li>
+			<button type="button" class="btn btn-outline-secondary" onclick="sortFunctL()" >$ <i class="fa fa-arrow-right" aria-hidden="true"></i> $$$</button>
+		</li>
+		<li>
+			<button id="ndbutton" type="button" class="btn btn-outline-secondary" onclick="sortFunctH()">$$$ <i class="fa fa-arrow-right" aria-hidden="true"></i> $</button>
+		</li>
+		<li>
+			<div id="numbers" ></div>
+		</li>
+	</ul>
+	<table id="sortTable">
+		<tr id="sortTable1">
+		</tr>
+		<tr id="sortTable2">
+		</tr>
+	</table>
+</div>
+
+<!-- for container -->
+</div>
+
+<div id="footer" >
+	<div class="container">
+		<section>
+				<header>
+					Fear of missing out?
+				</header>
+				<p>
+					Be the first to know about the latest deals, style updates & more!
+				</p>
+				<form class="form-inline" action="https://formspree.io/maggiew61@yahoo.com" method="POST">
+					  <div class="form-group mx-sm-3">
+						  <label for="inputPassword2" class="sr-only">email</label>
+						  <input type="text" class="form-control" id="inputPassword2" placeholder="Email">
+					  </div>
+					  <button type="submit" class="btn">Submit</button>
+				</form>
+		</section>
+		<div>
+			<section class="col-4" >
+				<header>Company Info</header>
+				<p>
+					About Us
+				</p>
+				<p>
+					Career
+				</p>
+				<p>
+					Find Store
+				</p>
+			</section>
+			<section class="col-4" >
+				<header>Help</header>
+				<p>
+					Contact Us
+				</p>
+				<p>
+					Track Order
+				</p>
+				<p>
+					Shipping Info
+				</p>
+			</section>
+			<section class="col-4" >
+				<header>Quick Links</header>
+				<p>
+					Privacy Policy
+				</p>
+				<p>
+					Terms & Conditions
+				</p>
+			</section>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/myScript.js"></script>
+<script src="js/lang-forher.js"></script>
+
+</body>
+</html>

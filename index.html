@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AMOR | leading fashion brand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- font awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- bootstrap? -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- tab icon -->
+	 <link rel="icon" href="img/gift.png" />
+
+</head>
+<body style="font-family:Microsoft JhengHei,serif" >
+
+
+<ul style="margin-bottom:0px">
+	<div class="container">
+	  	<li><a class="active" href="#home" id="amor">A M O R</a></li>
+	  	<li><a href="forher.html" id="forher"><span>for HER</span><br/><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+		<li>
+			<form  id="formid">
+				<select class="custom-select" name="select" onchange="changeLang()">
+					<option value="index.html">English</option>
+					<option value="index-cn.html">中文</option>
+				</select>
+			</form>
+		</li>
+	</div>
+</ul>
+
+<div class="container">
+	<div id="discount">
+		<a href="#" >
+			Clearance Sales Countdown: <span id="countdown"></span>
+			<i onclick="hideDiv()" class="fa fa-times" aria-hidden="true"></i>
+		</a>
+	</div>
+</div>
+
+<div style="max-width:100%">
+
+<!-- slider -->
+<div id="slider">
+	<div class="w3-display-container mySlides" >
+		  <img src="img/slider1.jpeg" style="width:100%">
+		  <div >
+		    meet me in
+		  </div>
+		  <div >
+			AMOR
+		  </div>
+	</div>
+	<div class="w3-display-container mySlides">
+	  <img src="img/slider2.jpeg" style="width:100%">
+	  <div >
+		BACK TO SCHOOL
+	  </div>
+	  <div >
+		ESSENTIALS
+	  </div>
+	</div>
+
+	<div class="w3-display-container mySlides">
+	  <img src="img/slider3.jpeg" style="width:100%">
+	  <div >
+		#sayhi
+	  </div>
+	  <div >
+		use #sayhi on Instagram @amor to share your moments
+	  </div>
+	</div>
+</div>
+
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<div id="footer" >
+	<div class="container">
+		<section>
+				<header>
+					Fear of missing out?
+				</header>
+				<p>
+					Be the first to know about the latest deals, style updates & more!
+				</p>
+				<form class="form-inline" action="https://formspree.io/maggiew61@yahoo.com" method="POST">
+					  <div class="form-group mx-sm-3">
+						  <label for="inputPassword2" class="sr-only">email</label>
+						  <input type="text" class="form-control" id="inputPassword2" placeholder="Email">
+					  </div>
+					  <button type="submit" class="btn">Submit</button>
+				</form>
+		</section>
+		<div>
+			<section class="col-4" >
+				<header>Company Info</header>
+				<p>
+					About Us
+				</p>
+				<p>
+					Career
+				</p>
+				<p>
+					Find Store
+				</p>
+			</section>
+			<section class="col-4" >
+				<header>Help</header>
+				<p>
+					Contact Us
+				</p>
+				<p>
+					Track Order
+				</p>
+				<p>
+					Shipping Info
+				</p>
+			</section>
+			<section class="col-4" >
+				<header>Quick Links</header>
+				<p>
+					Privacy Policy
+				</p>
+				<p>
+					Terms & Conditions
+				</p>
+			</section>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBUzkqub1-7bJCvdSc16YFzPfKiZkGOsOc",
+    authDomain: "js-portfolio.firebaseapp.com",
+    databaseURL: "https://js-portfolio.firebaseio.com",
+    projectId: "js-portfolio",
+    storageBucket: "js-portfolio.appspot.com",
+    messagingSenderId: "922181608407"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/myScript.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/countdown.js"></script>
+
+</body>
+</html>

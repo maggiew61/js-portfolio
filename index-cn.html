@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+	<title>AMOR | leading fashion brand</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- font awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap? -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- tab icon -->
+	 <link rel="icon" href="img/gift.png" />
+</head>
+<body  style="font-family:Microsoft JhengHei;">
+
+
+<ul style="margin-bottom:0px">
+	<div class="container">
+	  	<li><a class="active" href="#home" id="amor">A M O R</a></li>
+	  	<li><a href="forher-cn.html" id="forher"><span>她的</span><br/><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+		<li>
+			<form  id="formid">
+				<select class="custom-select" name="select" onchange="changeLang()">
+					<option value="index.html">English</option>
+					<option value="index-cn.html">中文</option>
+				</select>
+			</form>
+		</li>
+	</div>
+</ul>
+
+
+<div class="container">
+	<div id="discount">
+		<a href="#" >
+			出清折扣 : 倒數<span id="countdown"></span>前訂購洋裝系列的話打八折喔
+			<i onclick="hideDiv()" class="fa fa-times" aria-hidden="true"></i>
+		</a>
+	</div>
+</div>
+
+<div style="max-width:100%">
+
+<!-- slider -->
+<div id="slider">
+	<div class="w3-display-container mySlides" >
+		  <img src="img/slider1.jpeg" style="width:100%">
+		  <div >
+		    meet me in
+		  </div>
+		  <div >
+			AMOR
+		  </div>
+	</div>
+	<div class="w3-display-container mySlides">
+	  <img src="img/slider2.jpeg" style="width:100%">
+	  <div >
+		BACK TO SCHOOL
+	  </div>
+	  <div >
+		ESSENTIALS
+	  </div>
+	</div>
+
+	<div class="w3-display-container mySlides">
+	  <img src="img/slider3.jpeg" style="width:100%">
+	  <div >
+		#sayhi
+	  </div>
+	  <div >
+		use #sayhi on Instagram @amor to share your moments
+	  </div>
+	</div>
+</div>
+
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<div id="footer" >
+	<div class="container">
+		<section>
+				<header>
+					不想錯過最新消息?
+				</header>
+				<p>
+					一手掌握我們最新的折扣、流行資訊!
+				</p>
+				<form class="form-inline" action="https://formspree.io/maggiew61@yahoo.com" method="POST">
+					  <div class="form-group mx-sm-3">
+						  <label for="inputPassword2" class="sr-only">email</label>
+						  <input type="text" class="form-control" id="inputPassword2" placeholder="Email">
+					  </div>
+					  <button type="submit" class="btn">送出</button>
+				</form>
+		</section>
+		<div>
+			<section class="col-4" >
+				<header>公司資訊</header>
+				<p>
+					關於我們
+				</p>
+				<p>
+					加入我們
+				</p>
+				<p>
+					尋找店面
+				</p>
+			</section>
+			<section class="col-4" >
+				<header>協助</header>
+				<p>
+					聯絡我們
+				</p>
+				<p>
+					追蹤訂單
+				</p>
+				<p>
+					出貨資訊
+				</p>
+			</section>
+			<section class="col-4" >
+				<header>快速連結</header>
+				<p>
+					隱私權政策
+				</p>
+				<p>
+					服務條款
+				</p>
+			</section>
+		</div>
+	</div>
+</div>
+
+<script src="js/myScript.js"></script>
+<script src="js/lang.js"></script>
+
+<script>
+var slideIndex = 1; //default: 1st picture
+showDivs(slideIndex);
+
+function plusDivs(n) {  //question what happens when user clicks on right 2nd time
+  showDivs(slideIndex += n);
+}
+
+
+function showDivs(n) {  //n=slideIndex
+  var i;  //correct
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {
+	  slideIndex = 1
+  }
+  if (n < 1) {
+	  slideIndex = x.length
+  }
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+//default 1= only satisfies #81 condition;
+//when press again, slideIndex +=2, n=2, satisfieds 81, shows page 2
+//when press again, slideIndex +=3, n=3, satisfieds 81, shows page 2;
+//press again(left 1st time), n=0; satisfies #75slideIndex=x.length=4
+/* and go to #81 x[4-1]....-->displays page 4*/
+
+</script>
+<script>
+function calcTime(n){
+	let now=new Date()
+	let diff=n.getTime()-now.getTime()
+	let sec=Math.floor(diff/1000%60)
+	let min=Math.floor(diff/1000/60)%60
+	let hr=Math.floor(diff/1000/60/60)%24
+
+	let remain=[hr,min,sec]
+	return remain
+}
+
+let future=new Date()
+future.setHours(23)
+future.setMinutes(59)
+future.setSeconds(59)
+console.log(future.setHours(23))
+console.log(future.setMinutes(59))
+console.log(future)
+
+function reCala(){
+let counter = calcTime(future) //in order to send the argument, you call the function; var count[days, hours, min, sec]
+document.getElementById('countdown').textContent=counter[0]+"小時"+counter[1]+"分鐘"+counter[2]+"秒"
+refresh()
+}
+
+function refresh(){
+setTimeout(reCala,1000)
+}
+reCala();
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
