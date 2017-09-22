@@ -131,7 +131,7 @@ function sortDress(){
 
 // SORT BY ORDER(HIGH TO LOW/LOW TO HIGH PRICE)=========================================
 function sortFunctH(){
-	result.sort(function(a,b){return b.price - a.price});  //question  result? result being called global?
+	result.sort(function(a,b){return b.price - a.price});
 	let str = ''
 	for(i=0; i<result.length;i++) {
 		str += "<td><div><img src='"+ result[i].imgsrc+"'/>"+ "<p>"+result[i].name+"</p>"+"<p>"+"View Count"+result[i].viewcount+"</p>"+"<p>"+"NT$" + result[i].price+"</p>"+ "</div>"+"</td>";
@@ -139,7 +139,7 @@ function sortFunctH(){
 	}
 	let x=document.querySelector('input[value="Dress"]').checked;
 	let y=document.querySelector('input[value="Accessory"]').checked;
-	if(x===true || y===true){  //question I don't even understand why this worked @@
+	if(x===true || y===true){
 		let str = ''
 		for(i=0; i<result.length;i++) {
 		str += "<td><div><img src='"+ result[i].imgsrc+"'/>"+ "<p>"+result[i].name+"</p>"+"<p>"+"View Count"+result[i].viewcount+"</p>"+"<p>"+"NT$" + result[i].price+"</p>"+ "</div>"+"</td>";

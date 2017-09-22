@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.box:hover .image {
+  opacity: 0.3;
+}
+
+.box:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: grey;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+
+<table id="sortTable">
+	<tr id="sortTable1">
+	</tr>
+</table>
+
+
+<div class="box">
+  <img src="img/accessory1.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">SHOP NOW</div>
+  </div>
+</div>
+
+<div style="position: relative;border:1px solid black">
+	<img  src="img/accessory1.jpg" alt="Avatar" class="image" style="width:100%">
+	<div style="position: absolute;border:1px solid black;top: 50%;
+    left: 50%;">
+		shopw now
+	</div>
+</div>
+<script>
+let product=[
+	{
+		imgsrc:"img/accessory1.jpg",
+		name:"Maggie Wang",
+		price:5500,
+		catalog:1,
+		viewcount:25000
+	},
+	{
+		imgsrc:"img/accessory2.jpg",
+		name:"Elisa Wang",
+		price:3500,
+		catalog:1,
+		viewcount:15000
+	},
+];
+let str=''
+for(i=0; i<product.length;i++) {
+	if (i === 4) {break;}
+	str += "<td><div><img src='"+ product[i].imgsrc+"'/>"+ "<p>"+product[i].name+"</p>"+
+	"<p>"+"View Count"+product[i].viewcount+"</p>"+"<p>"+"NT$" + product[i].price+"</p>"+ "</div>"+"</td>";
+	document.getElementById('sortTable1').innerHTML=str;
+}
+
+</script>
+</body>
+</html>
